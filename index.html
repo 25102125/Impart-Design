@@ -1267,6 +1267,735 @@
       .dc-top-photo{width:52px !important;height:52px !important;}
     }
 
+  
+    /* ===== Correções finais de responsividade mobile ===== */
+    html, body{
+      max-width:100%;
+      overflow-x:hidden !important;
+    }
+    img, video{
+      max-width:100%;
+    }
+
+    @media(max-width:960px){
+      section{
+        padding:64px 18px !important;
+      }
+      .container{
+        width:100%;
+        max-width:100%;
+      }
+      .nav{
+        margin-bottom:38px !important;
+      }
+      .hero{
+        min-height:auto !important;
+        padding:18px 18px 54px !important;
+      }
+      .hero-content{
+        min-height:auto !important;
+        padding:60px 0 18px !important;
+        align-items:flex-start !important;
+      }
+      .hero-copy{
+        max-width:100% !important;
+      }
+      h1{
+        font-size:clamp(36px, 12vw, 58px) !important;
+        line-height:1.02 !important;
+        letter-spacing:-.045em !important;
+      }
+      .sub{
+        font-size:17px !important;
+        line-height:1.55 !important;
+      }
+      .hero-actions{
+        gap:12px !important;
+      }
+      .hero-actions a{
+        flex:1 1 100%;
+        width:100%;
+        text-align:center;
+      }
+      .trust{
+        gap:8px !important;
+      }
+      .trust span{
+        font-size:12px !important;
+        padding:9px 11px !important;
+      }
+
+      .authority{
+        padding:48px 18px !important;
+      }
+      .authority-grid{
+        grid-template-columns:1fr !important;
+        gap:22px !important;
+      }
+      .stats-grid{
+        grid-template-columns:repeat(2,1fr) !important;
+        gap:12px !important;
+      }
+      .stat-card{
+        padding:18px 12px !important;
+      }
+
+      .physical-grid{
+        grid-template-columns:1fr !important;
+        gap:28px !important;
+      }
+      .physical-card-section{
+        padding-top:58px !important;
+      }
+      .physical-copy h2{
+        font-size:clamp(32px,10vw,46px) !important;
+      }
+      .physical-copy p{
+        font-size:16px !important;
+      }
+      .physical-list{
+        grid-template-columns:1fr !important;
+      }
+      .card-mockup-wrap{
+        min-height:auto !important;
+        padding:22px 0 8px !important;
+      }
+      .physical-card-img{
+        width:min(330px,88vw) !important;
+        transform:rotate(-3deg) !important;
+        border-radius:18px !important;
+      }
+      .mockup-back-card{
+        width:min(310px,82vw) !important;
+        height:200px !important;
+        transform:translate(28px,20px) rotate(4deg) !important;
+        border-radius:18px !important;
+      }
+
+      .features{
+        grid-template-columns:1fr !important;
+      }
+      .feature{
+        padding:22px !important;
+      }
+
+      .examples{
+        padding:60px 0 !important;
+      }
+      .examples .container{
+        padding:0 18px;
+      }
+      .carousel-shell{
+        padding-left:0 !important;
+        padding-right:0 !important;
+        mask-image:none !important;
+        -webkit-mask-image:none !important;
+        overflow-x:auto !important;
+        scroll-snap-type:x mandatory;
+        -webkit-overflow-scrolling:touch;
+      }
+      .carousel-shell::-webkit-scrollbar{
+        display:none;
+      }
+      .carousel-track{
+        animation:none !important;
+        gap:14px !important;
+        padding:0 18px 8px !important;
+      }
+      .phone-demo{
+        scroll-snap-align:center;
+      }
+
+      .compare-grid,
+      .showcase-grid,
+      .testimonial-grid,
+      .plan-grid,
+      .process{
+        grid-template-columns:1fr !important;
+      }
+      .compare-card{
+        padding:24px 18px !important;
+      }
+      .segment-grid{
+        grid-template-columns:repeat(2,1fr) !important;
+      }
+      .showcase-grid{
+        gap:28px !important;
+      }
+      .big-phone{
+        width:min(280px,86vw) !important;
+        transform:none !important;
+      }
+      .showcase-points{
+        grid-template-columns:1fr !important;
+      }
+
+      .plans{
+        padding-top:60px !important;
+      }
+      .plan-grid{
+        gap:18px !important;
+      }
+      .plan,
+      .plan.featured{
+        transform:none !important;
+        padding:24px 20px !important;
+      }
+      .plan .ideal{
+        min-height:auto !important;
+      }
+      .price strong{
+        font-size:36px !important;
+      }
+
+      .google-carousel{
+        overflow-x:auto !important;
+        scroll-snap-type:x mandatory;
+        -webkit-overflow-scrolling:touch;
+        mask-image:none !important;
+        -webkit-mask-image:none !important;
+      }
+      .google-carousel::-webkit-scrollbar{
+        display:none;
+      }
+      .google-track{
+        animation:none !important;
+        padding:0 18px 8px !important;
+      }
+      .review-card{
+        scroll-snap-align:center;
+      }
+
+      .launch{
+        padding:32px 18px !important;
+        border-radius:24px !important;
+      }
+      .final h2{
+        font-size:clamp(30px,9vw,42px) !important;
+      }
+    }
+
+    @media(max-width:560px){
+      .logo img{
+        width:132px !important;
+      }
+      .badge{
+        font-size:11px !important;
+        padding:8px 11px !important;
+      }
+      h1{
+        font-size:40px !important;
+      }
+      .section-title{
+        margin-bottom:30px !important;
+      }
+      .section-title h2{
+        font-size:30px !important;
+        line-height:1.08 !important;
+      }
+      .section-title p{
+        font-size:15px !important;
+      }
+      .cta,.ghost{
+        padding:16px 18px !important;
+        border-radius:15px !important;
+        font-size:14px !important;
+      }
+      .stats-grid{
+        grid-template-columns:1fr 1fr !important;
+      }
+      .stat-card strong{
+        font-size:26px !important;
+      }
+      .stat-card span{
+        font-size:11px !important;
+      }
+      .phone-demo{
+        width:210px !important;
+        min-width:210px !important;
+        height:390px !important;
+      }
+      .phone-demo-screen{
+        height:390px !important;
+        min-height:390px !important;
+      }
+      .dc-content{
+        padding:12px 11px !important;
+      }
+      .dc-logo{
+        font-size:8px !important;
+        margin-bottom:6px !important;
+      }
+      .dc-top-photo{
+        width:50px !important;
+        height:50px !important;
+        font-size:26px !important;
+        margin-bottom:7px !important;
+      }
+      .dc-name{
+        font-size:20px !important;
+      }
+      .dc-role{
+        font-size:8px !important;
+        margin-bottom:8px !important;
+      }
+      .dc-main{
+        height:32px !important;
+        font-size:9px !important;
+      }
+      .dc-icon{
+        height:30px !important;
+        font-size:8px !important;
+      }
+      .dc-strip{
+        font-size:8px !important;
+      }
+      .segment-grid{
+        grid-template-columns:1fr !important;
+      }
+      .review-card{
+        width:268px !important;
+        min-width:268px !important;
+      }
+      .float{
+        left:14px !important;
+        right:14px !important;
+        bottom:14px !important;
+        text-align:center;
+        padding:14px 16px !important;
+        font-size:14px !important;
+      }
+      .footer{
+        padding-bottom:82px !important;
+      }
+    }
+
+    @media(max-width:380px){
+      h1{
+        font-size:35px !important;
+      }
+      .phone-demo{
+        width:196px !important;
+        min-width:196px !important;
+      }
+      .review-card{
+        width:250px !important;
+        min-width:250px !important;
+      }
+      .stats-grid{
+        grid-template-columns:1fr !important;
+      }
+    }
+
+  
+    /* ===== Carrossel estilo referência enviada ===== */
+    .examples{
+      background:radial-gradient(circle at top right, rgba(7,91,255,.20), transparent 32%),linear-gradient(180deg,#050912 0%,#07111f 55%,#050912 100%) !important;
+    }
+    .carousel-track{gap:24px !important;animation:slideExamples 48s linear infinite !important;}
+    .phone-demo{
+      width:216px !important;min-width:216px !important;height:420px !important;
+      border-radius:16px !important;padding:0 !important;border:1px solid rgba(255,255,255,.14) !important;
+      background:#0b0f18 !important;box-shadow:0 28px 70px rgba(0,0,0,.45) !important;overflow:hidden !important;
+    }
+    .phone-demo:before{display:none !important;}
+    .phone-demo-screen{height:420px !important;min-height:420px !important;border-radius:16px !important;background:#080b12 !important;overflow:hidden !important;}
+    .digital-card{height:100%;border-radius:16px !important;background:#080b12 !important;position:relative;overflow:hidden;color:white;}
+    .digital-card:before{
+      content:"";position:absolute;inset:0;z-index:0;
+      background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.08) 26%,rgba(0,0,0,.80) 55%,rgba(0,0,0,.98) 100%),var(--card-photo),var(--card-bg) !important;
+      background-size:cover !important;background-position:center top !important;
+    }
+    .digital-card:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(255,255,255,.10),transparent 20%,rgba(0,0,0,.58) 100%) !important;pointer-events:none;}
+    .dc-content{position:relative;z-index:2;height:100%;padding:10px 10px 11px !important;display:flex !important;flex-direction:column !important;text-align:center;justify-content:flex-end !important;}
+    .dc-logo{
+      position:absolute !important;top:10px !important;left:50% !important;transform:translateX(-50%) !important;
+      margin:0 !important;padding:5px 10px !important;background:rgba(0,0,0,.48) !important;border:1px solid rgba(255,255,255,.18) !important;
+      color:#fff !important;font-size:8px !important;line-height:1 !important;border-radius:999px !important;z-index:5 !important;white-space:nowrap !important;
+    }
+    .dc-top-photo{
+      position:absolute !important;top:38px !important;left:50% !important;transform:translateX(-50%) !important;
+      width:84px !important;height:84px !important;margin:0 !important;border-radius:18px !important;border:0 !important;box-shadow:none !important;background:transparent !important;font-size:0 !important;z-index:4 !important;
+    }
+    .dc-top-photo:before{content:var(--photo-icon);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:52px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.45));}
+    .dc-name{
+      color:white !important;margin-top:170px !important;font-size:24px !important;line-height:.98 !important;letter-spacing:-.055em !important;
+      min-height:48px !important;display:flex;align-items:flex-end;justify-content:center;text-shadow:0 8px 18px rgba(0,0,0,.7) !important;
+    }
+    .dc-role{min-height:20px !important;margin:3px 0 9px !important;font-size:8px !important;letter-spacing:.09em !important;color:rgba(255,255,255,.82) !important;text-transform:uppercase;font-weight:900 !important;}
+    .dc-preview{display:none !important;}
+    .dc-actions{gap:6px !important;margin-top:0 !important;display:grid !important;}
+    .dc-main{
+      height:31px !important;border-radius:7px !important;font-size:8px !important;background:rgba(0,0,0,.42) !important;
+      border:1px solid var(--accent,#075BFF) !important;color:#fff !important;text-transform:uppercase;letter-spacing:.04em;box-shadow:none !important;
+    }
+    .dc-icons{display:grid !important;grid-template-columns:1fr !important;gap:6px !important;}
+    .dc-icon{
+      height:29px !important;border-radius:7px !important;background:rgba(0,0,0,.48) !important;border:1px solid var(--accent,#075BFF) !important;
+      color:white !important;justify-content:center !important;padding:0 8px !important;font-size:8px !important;font-weight:900 !important;text-transform:uppercase;
+    }
+    .dc-icon:nth-child(1)::after{content:" WhatsApp" !important;}
+    .dc-icon:nth-child(2)::after{content:" Instagram" !important;}
+    .dc-icon:nth-child(3)::after{content:" Localização" !important;}
+    .dc-icon:nth-child(4)::after{content:" Google" !important;}
+    .dc-strip{margin-top:5px !important;padding:7px 6px !important;font-size:8px !important;border-radius:8px !important;background:rgba(0,0,0,.55) !important;line-height:1.2 !important;color:#fff !important;}
+    .dc-strip:before{content:"★ ★ ★ ★ ★";display:block;font-size:10px !important;margin-bottom:2px !important;color:#facc15 !important;letter-spacing:1px;}
+    .card-restaurante{--accent:#d4a017;--photo-icon:"🍔";--card-photo:radial-gradient(circle at 50% 29%, rgba(245,158,11,.95), transparent 34%),linear-gradient(180deg,#2b1608,#0b0f18);--card-bg:linear-gradient(180deg,#1b1008,#05070b);}
+    .card-barbearia{--accent:#d4a017;--photo-icon:"🧔🏻‍♂️";--card-photo:radial-gradient(circle at 50% 28%, rgba(212,175,55,.50), transparent 34%),linear-gradient(180deg,#181c22,#06080d);--card-bg:linear-gradient(180deg,#15191f,#05070b);}
+    .card-clinica{--accent:#38bdf8;--photo-icon:"👩🏻‍⚕️";--card-photo:linear-gradient(180deg, rgba(219,234,254,.96), rgba(147,197,253,.56) 42%, rgba(15,23,42,.95) 100%);--card-bg:linear-gradient(180deg,#dbeafe,#0f172a);}
+    .card-oficina{--accent:#ef4444;--photo-icon:"🚘";--card-photo:radial-gradient(circle at 50% 33%, rgba(239,68,68,.62), transparent 35%),linear-gradient(180deg,#151515,#040506);--card-bg:linear-gradient(180deg,#121212,#040506);}
+    .card-imoveis{--accent:#3b82f6;--photo-icon:"👨🏻‍💼";--card-photo:radial-gradient(circle at 50% 28%, rgba(59,130,246,.45), transparent 35%),linear-gradient(180deg,#172033,#05070b);--card-bg:linear-gradient(180deg,#172033,#05070b);}
+    .card-confeitaria{--accent:#b7791f;--photo-icon:"🎂";--card-photo:radial-gradient(circle at 50% 30%, rgba(251,191,36,.52), transparent 36%),linear-gradient(180deg,#3a1b10,#09060a);--card-bg:linear-gradient(180deg,#3a1b10,#09060a);}
+    .card-advocacia{--accent:#d4a017;--photo-icon:"⚖️";--card-photo:radial-gradient(circle at 50% 30%, rgba(212,175,55,.42), transparent 34%),linear-gradient(180deg,#111827,#05070b);--card-bg:linear-gradient(180deg,#111827,#05070b);}
+    .card-academia{--accent:#d4a017;--photo-icon:"🏋️";--card-photo:radial-gradient(circle at 50% 30%, rgba(250,204,21,.45), transparent 34%),linear-gradient(180deg,#20180a,#05070b);--card-bg:linear-gradient(180deg,#20180a,#05070b);}
+    @media(max-width:560px){
+      .phone-demo{width:198px !important;min-width:198px !important;height:386px !important;}
+      .phone-demo-screen{height:386px !important;min-height:386px !important;}
+      .dc-name{margin-top:155px !important;font-size:21px !important;min-height:43px !important;}
+      .dc-top-photo{top:34px !important;width:76px !important;height:76px !important;}
+      .dc-top-photo:before{font-size:46px !important;}
+      .dc-main,.dc-icon{height:28px !important;font-size:7px !important;}
+    }
+
+  
+    /* ===== CARROSSEL: visual final no estilo do anexo ===== */
+    .examples{
+      background:
+        radial-gradient(circle at top right, rgba(7,91,255,.18), transparent 32%),
+        linear-gradient(180deg,#050912 0%,#07111f 58%,#050912 100%) !important;
+      padding-top:76px !important;
+      padding-bottom:72px !important;
+    }
+    .examples .section-title h2{
+      color:#fff !important;
+      font-size:clamp(32px,4vw,52px) !important;
+      letter-spacing:-.045em;
+    }
+    .examples .section-title h2 span{color:#075BFF}
+    .examples .section-title p{color:#dbe7ff !important}
+
+    .carousel-shell{
+      padding:8px 0 34px !important;
+      overflow:hidden !important;
+      mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+      -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+    }
+    .carousel-track{
+      gap:26px !important;
+      align-items:stretch !important;
+      animation:slideExamples 48s linear infinite !important;
+    }
+
+    .phone-demo{
+      width:218px !important;
+      min-width:218px !important;
+      height:455px !important;
+      padding:0 !important;
+      border-radius:18px !important;
+      background:#090d15 !important;
+      border:1px solid rgba(255,255,255,.16) !important;
+      box-shadow:0 26px 70px rgba(0,0,0,.50) !important;
+      overflow:hidden !important;
+    }
+    .phone-demo:before{display:none !important}
+    .phone-demo-screen{
+      width:100% !important;
+      height:455px !important;
+      min-height:455px !important;
+      border-radius:18px !important;
+      background:#080b12 !important;
+      overflow:hidden !important;
+      border:0 !important;
+    }
+    .digital-card{
+      width:100%;
+      height:100%;
+      border-radius:18px !important;
+      overflow:hidden;
+      position:relative;
+      background:#080b12;
+      color:white;
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .digital-card:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:0;
+      background:
+        linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.10) 34%,rgba(0,0,0,.76) 57%,rgba(0,0,0,.98) 100%),
+        var(--hero-art),
+        var(--base-bg) !important;
+      background-size:cover !important;
+      background-position:center top !important;
+    }
+    .digital-card:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      background:
+        linear-gradient(180deg,rgba(255,255,255,.10),transparent 18%,rgba(0,0,0,.62) 100%),
+        radial-gradient(circle at 50% 10%,rgba(255,255,255,.08),transparent 28%);
+    }
+    .dc-content{
+      position:relative;
+      z-index:2;
+      height:100%;
+      display:flex !important;
+      flex-direction:column !important;
+      justify-content:flex-start !important;
+      text-align:center;
+      padding:13px 12px 12px !important;
+    }
+    .dc-logo{
+      position:relative !important;
+      top:auto !important;
+      left:auto !important;
+      transform:none !important;
+      margin:0 auto 112px !important;
+      display:inline-flex !important;
+      align-items:center;
+      justify-content:center;
+      width:auto !important;
+      min-width:96px;
+      height:23px;
+      padding:0 12px !important;
+      border-radius:999px !important;
+      background:rgba(0,0,0,.48) !important;
+      border:1px solid rgba(255,255,255,.16) !important;
+      color:#fff !important;
+      font-size:10px !important;
+      line-height:1 !important;
+      font-weight:900 !important;
+      text-transform:uppercase;
+      letter-spacing:.08em !important;
+      backdrop-filter:blur(10px);
+    }
+    .dc-top-photo{
+      position:absolute !important;
+      top:48px !important;
+      left:50% !important;
+      transform:translateX(-50%) !important;
+      width:132px !important;
+      height:108px !important;
+      margin:0 !important;
+      border:0 !important;
+      border-radius:0 !important;
+      background:transparent !important;
+      box-shadow:none !important;
+      font-size:0 !important;
+      z-index:4 !important;
+    }
+    .dc-top-photo:before{
+      content:var(--visual);
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:76px;
+      filter:drop-shadow(0 13px 22px rgba(0,0,0,.58));
+    }
+    .dc-name{
+      color:#fff !important;
+      margin:0 auto 2px !important;
+      min-height:50px !important;
+      display:flex !important;
+      align-items:flex-end !important;
+      justify-content:center !important;
+      font-size:24px !important;
+      line-height:.96 !important;
+      letter-spacing:-.055em !important;
+      font-weight:900 !important;
+      text-shadow:0 8px 20px rgba(0,0,0,.82) !important;
+      max-width:172px;
+    }
+    .dc-role{
+      color:rgba(255,255,255,.76) !important;
+      margin:0 0 11px !important;
+      min-height:13px !important;
+      font-size:8px !important;
+      line-height:1.1 !important;
+      font-weight:900 !important;
+      text-transform:uppercase;
+      letter-spacing:.10em !important;
+    }
+    .dc-preview{display:none !important}
+    .dc-actions{
+      display:grid !important;
+      gap:7px !important;
+      margin-top:0 !important;
+    }
+    .dc-main,
+    .dc-icon{
+      height:30px !important;
+      border-radius:7px !important;
+      background:rgba(0,0,0,.46) !important;
+      border:1px solid var(--accent,#075BFF) !important;
+      color:white !important;
+      font-size:8px !important;
+      font-weight:900 !important;
+      text-transform:uppercase;
+      letter-spacing:.04em;
+      box-shadow:0 0 16px color-mix(in srgb, var(--accent,#075BFF) 28%, transparent);
+    }
+    .dc-main{
+      display:flex !important;
+      align-items:center;
+      justify-content:center;
+      padding:0 8px !important;
+    }
+    .dc-icons{
+      display:grid !important;
+      grid-template-columns:1fr !important;
+      gap:7px !important;
+    }
+    .dc-icon{
+      display:flex !important;
+      align-items:center;
+      justify-content:center !important;
+      padding:0 8px !important;
+    }
+    .dc-icon:nth-child(1)::after{content:" WHATSAPP" !important;}
+    .dc-icon:nth-child(2)::after{content:" INSTAGRAM" !important;}
+    .dc-icon:nth-child(3)::after{content:" LOCALIZAÇÃO" !important;}
+    .dc-icon:nth-child(4){display:none !important;}
+    .dc-icon:nth-child(1),
+    .dc-icon:nth-child(2),
+    .dc-icon:nth-child(3){font-size:0 !important;}
+    .dc-icon:nth-child(1)::after,
+    .dc-icon:nth-child(2)::after,
+    .dc-icon:nth-child(3)::after{font-size:8px !important;}
+
+    .dc-strip{
+      margin-top:8px !important;
+      padding:0 !important;
+      height:40px !important;
+      border-radius:0 !important;
+      background:transparent !important;
+      border:0 !important;
+      color:rgba(255,255,255,.82) !important;
+      font-size:10px !important;
+      font-weight:700 !important;
+      letter-spacing:0 !important;
+      text-transform:none !important;
+      line-height:1.35 !important;
+    }
+    .dc-strip:before{
+      content:var(--rating) " ★★★★★";
+      display:block;
+      color:#facc15;
+      font-size:14px !important;
+      line-height:1.1 !important;
+      margin-bottom:2px !important;
+      letter-spacing:1px;
+      font-weight:900;
+    }
+    .dc-strip:after{
+      content:"Avaliações no Google";
+      display:block;
+      color:rgba(255,255,255,.82);
+      font-size:10px;
+    }
+
+    .card-restaurante{
+      --accent:#b8862b;
+      --rating:"4,9";
+      --visual:"🥟";
+      --base-bg:linear-gradient(180deg,#14100a,#05070b);
+      --hero-art:
+        radial-gradient(circle at 50% 28%, rgba(246,173,85,.70), transparent 32%),
+        linear-gradient(180deg,#1a130b,#05070b);
+    }
+    .card-barbearia{
+      --accent:#8b7354;
+      --rating:"5,0";
+      --visual:"🧔🏻‍♂️";
+      --base-bg:linear-gradient(180deg,#151515,#05070b);
+      --hero-art:
+        radial-gradient(circle at 58% 28%, rgba(194,154,90,.45), transparent 34%),
+        linear-gradient(180deg,#171717,#05070b);
+    }
+    .card-clinica{
+      --accent:#2f80b8;
+      --rating:"5,0";
+      --visual:"👩🏻‍⚕️";
+      --base-bg:linear-gradient(180deg,#d9edf8,#c8dff1 46%,#0b1625 100%);
+      --hero-art:
+        linear-gradient(180deg,rgba(226,242,255,.95),rgba(184,218,241,.88) 46%,rgba(22,56,86,.75) 100%);
+    }
+    .card-clinica .dc-name,
+    .card-clinica .dc-role{color:#17324d !important;text-shadow:none !important;}
+    .card-clinica .dc-strip:after{color:#1f2937 !important;}
+    .card-clinica .dc-strip{color:#1f2937 !important;}
+    .card-clinica .dc-icon,
+    .card-clinica .dc-main{background:rgba(47,128,184,.82) !important;color:white !important;}
+    .card-oficina{
+      --accent:#c0392b;
+      --rating:"4,8";
+      --visual:"🚘";
+      --base-bg:linear-gradient(180deg,#0c0d10,#05070b);
+      --hero-art:
+        radial-gradient(circle at 50% 31%, rgba(192,57,43,.55), transparent 33%),
+        linear-gradient(180deg,#141414,#05070b);
+    }
+    .card-imoveis{
+      --accent:#2d6798;
+      --rating:"4,0";
+      --visual:"👨🏻‍💼";
+      --base-bg:linear-gradient(180deg,#0f1720,#05070b);
+      --hero-art:
+        radial-gradient(circle at 50% 28%, rgba(45,103,152,.55), transparent 34%),
+        linear-gradient(180deg,#101820,#05070b);
+    }
+    .card-confeitaria{
+      --accent:#a06a3a;
+      --rating:"4,9";
+      --visual:"🎂";
+      --base-bg:linear-gradient(180deg,#2b1410,#070507);
+      --hero-art:
+        radial-gradient(circle at 50% 30%, rgba(210,154,95,.62), transparent 34%),
+        linear-gradient(180deg,#3a1d16,#070507);
+    }
+    .card-advocacia{
+      --accent:#b8862b;
+      --rating:"5,0";
+      --visual:"⚖️";
+      --base-bg:linear-gradient(180deg,#111827,#05070b);
+      --hero-art:radial-gradient(circle at 50% 28%, rgba(184,134,43,.45), transparent 34%),linear-gradient(180deg,#101827,#05070b);
+    }
+    .card-academia{
+      --accent:#b8862b;
+      --rating:"4,9";
+      --visual:"🏋️";
+      --base-bg:linear-gradient(180deg,#1b160e,#05070b);
+      --hero-art:radial-gradient(circle at 50% 28%, rgba(234,179,8,.48), transparent 34%),linear-gradient(180deg,#1b160e,#05070b);
+    }
+
+    @media(max-width:960px){
+      .carousel-shell{
+        overflow-x:auto !important;
+        scroll-snap-type:x mandatory;
+        mask-image:none !important;
+        -webkit-mask-image:none !important;
+      }
+      .carousel-track{
+        animation:none !important;
+        padding:0 18px 8px !important;
+      }
+      .phone-demo{scroll-snap-align:center;}
+    }
+    @media(max-width:560px){
+      .phone-demo{width:200px !important;min-width:200px !important;height:420px !important;}
+      .phone-demo-screen{height:420px !important;min-height:420px !important;}
+      .dc-top-photo{top:47px !important;width:122px !important;}
+      .dc-top-photo:before{font-size:68px !important;}
+      .dc-name{font-size:21px !important;min-height:46px !important;}
+      .dc-main,.dc-icon{height:29px !important;}
+    }
+
   </style>
 </head>
 <body>
@@ -1392,7 +2121,7 @@
                 <div class="dc-role">Cardápio digital • Delivery • Avaliações</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Pedir no WhatsApp</div>
+                  <div class="dc-main">WHATSAPP</div>
                   <div class="dc-icons">
                     <div class="dc-icon">🍽️</div>
                     <div class="dc-icon">📍</div>
@@ -1413,10 +2142,10 @@
                 <div class="dc-logo">Barbearia</div>
                 <div class="dc-top-photo">✂️</div>
                 <div class="dc-name">Nobre</div>
-                <div class="dc-role">Barbershop</div>
+                <div class="dc-role">BARBERSHOP</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Agendar horário</div>
+                  <div class="dc-main">AGENDAR HORÁRIO</div>
                   <div class="dc-icons">
                     <div class="dc-icon">💈</div>
                     <div class="dc-icon">📍</div>
@@ -1437,10 +2166,10 @@
                 <div class="dc-logo">Clínica</div>
                 <div class="dc-top-photo">🦷</div>
                 <div class="dc-name">Dra. Isabela Souza</div>
-                <div class="dc-role">Odontologia</div>
+                <div class="dc-role">ODONTOLOGIA</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Agendar consulta</div>
+                  <div class="dc-main">AGENDAR CONSULTA</div>
                   <div class="dc-icons">
                     <div class="dc-icon">🩺</div>
                     <div class="dc-icon">📍</div>
@@ -1461,10 +2190,10 @@
                 <div class="dc-logo">Oficina</div>
                 <div class="dc-top-photo">🚗</div>
                 <div class="dc-name">MAX</div>
-                <div class="dc-role">Performance</div>
+                <div class="dc-role">PERFORMANCE</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Solicitar orçamento</div>
+                  <div class="dc-main">SOLICITAR ORÇAMENTO</div>
                   <div class="dc-icons">
                     <div class="dc-icon">🛠️</div>
                     <div class="dc-icon">📍</div>
@@ -1485,10 +2214,10 @@
                 <div class="dc-logo">Corretor</div>
                 <div class="dc-top-photo">🏠</div>
                 <div class="dc-name">Marcos Almeida</div>
-                <div class="dc-role">Negócios Imobiliários</div>
+                <div class="dc-role">NEGÓCIOS IMOBILIÁRIOS</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Ver imóveis</div>
+                  <div class="dc-main">VER IMÓVEIS</div>
                   <div class="dc-icons">
                     <div class="dc-icon">🏡</div>
                     <div class="dc-icon">📝</div>
@@ -1506,13 +2235,13 @@
           <div class="phone-demo-screen">
             <div class="digital-card card-confeitaria">
               <div class="dc-content">
-                <div class="dc-logo">Confeitaria</div>
+                <div class="dc-logo">CONFEITARIA</div>
                 <div class="dc-top-photo">🎂</div>
                 <div class="dc-name">Doce Encanto</div>
-                <div class="dc-role">Confeitaria</div>
+                <div class="dc-role">CONFEITARIA</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Fazer encomenda</div>
+                  <div class="dc-main">ENCOMENDAR</div>
                   <div class="dc-icons">
                     <div class="dc-icon">🧁</div>
                     <div class="dc-icon">📍</div>
@@ -1533,10 +2262,10 @@
                 <div class="dc-logo">Advocacia</div>
                 <div class="dc-top-photo">⚖️</div>
                 <div class="dc-name">Lima & Prado</div>
-                <div class="dc-role">Consultoria • Áreas • Contato</div>
+                <div class="dc-role">CONSULTORIA • ÁREAS • CONTATO</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Falar com especialista</div>
+                  <div class="dc-main">FALE CONOSCO</div>
                   <div class="dc-icons">
                     <div class="dc-icon">📄</div>
                     <div class="dc-icon">📍</div>
@@ -1557,10 +2286,10 @@
                 <div class="dc-logo">Academia</div>
                 <div class="dc-top-photo">🏋️</div>
                 <div class="dc-name">Fit Prime Studio</div>
-                <div class="dc-role">Planos • Treinos • Avaliação</div>
+                <div class="dc-role">PLANOS • TREINOS • AVALIAÇÃO</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Conhecer planos</div>
+                  <div class="dc-main">CONHECER PLANOS</div>
                   <div class="dc-icons">
                     <div class="dc-icon">💪</div>
                     <div class="dc-icon">📍</div>
@@ -1584,7 +2313,7 @@
                 <div class="dc-role">Cardápio digital • Delivery • Avaliações</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Pedir no WhatsApp</div>
+                  <div class="dc-main">WHATSAPP</div>
                   <div class="dc-icons">
                     <div class="dc-icon">🍽️</div>
                     <div class="dc-icon">📍</div>
@@ -1605,10 +2334,10 @@
                 <div class="dc-logo">Barbearia</div>
                 <div class="dc-top-photo">✂️</div>
                 <div class="dc-name">Nobre</div>
-                <div class="dc-role">Barbershop</div>
+                <div class="dc-role">BARBERSHOP</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Agendar horário</div>
+                  <div class="dc-main">AGENDAR HORÁRIO</div>
                   <div class="dc-icons">
                     <div class="dc-icon">💈</div>
                     <div class="dc-icon">📍</div>
@@ -1629,10 +2358,10 @@
                 <div class="dc-logo">Clínica</div>
                 <div class="dc-top-photo">🦷</div>
                 <div class="dc-name">Dra. Isabela Souza</div>
-                <div class="dc-role">Odontologia</div>
+                <div class="dc-role">ODONTOLOGIA</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Agendar consulta</div>
+                  <div class="dc-main">AGENDAR CONSULTA</div>
                   <div class="dc-icons">
                     <div class="dc-icon">🩺</div>
                     <div class="dc-icon">📍</div>
@@ -1653,10 +2382,10 @@
                 <div class="dc-logo">Oficina</div>
                 <div class="dc-top-photo">🚗</div>
                 <div class="dc-name">MAX</div>
-                <div class="dc-role">Performance</div>
+                <div class="dc-role">PERFORMANCE</div>
                 <div class="dc-preview"><span></span><span></span><span></span></div>
                 <div class="dc-actions">
-                  <div class="dc-main">Solicitar orçamento</div>
+                  <div class="dc-main">SOLICITAR ORÇAMENTO</div>
                   <div class="dc-icons">
                     <div class="dc-icon">🛠️</div>
                     <div class="dc-icon">📍</div>
@@ -1688,7 +2417,7 @@
   <section class="segments">
     <div class="container"><div class="section-title"><h2>Ideal para praticamente qualquer segmento</h2><p>Seu mini site pode ser adaptado para vender, agendar, apresentar serviços ou gerar orçamentos.</p></div>
       <div class="segment-grid">
-        <div class="segment"><span>🍔</span>Restaurantes</div><div class="segment"><span>✂️</span>Barbearias</div><div class="segment"><span>🏥</span>Clínicas</div><div class="segment"><span>🚗</span>Oficinas</div><div class="segment"><span>⚖️</span>Advogados</div><div class="segment"><span>🏋️</span>Academias</div><div class="segment"><span>🏠</span>Corretores</div><div class="segment"><span>🛍️</span>Lojas</div><div class="segment"><span>🎂</span>Confeitarias</div><div class="segment"><span>💼</span>Consultores</div>
+        <div class="segment"><span>🍔</span>Restaurantes</div><div class="segment"><span>✂️</span>Barbearias</div><div class="segment"><span>🏥</span>Clínicas</div><div class="segment"><span>🚗</span>Oficinas</div><div class="segment"><span>⚖️</span>Advogados</div><div class="segment"><span>🏋️</span>Academias</div><div class="segment"><span>🏠</span>Corretores</div><div class="segment"><span>🛍️</span>Lojas</div><div class="segment"><span>🎂</span>CONFEITARIAs</div><div class="segment"><span>💼</span>Consultores</div>
       </div>
     </div>
   </section>
